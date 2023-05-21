@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import DarkMode from '../DarkMode/DarkMode';
 
 const Header = () => {
     return (
@@ -12,18 +13,16 @@ const Header = () => {
           </div>
           <ul className="nav-links">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">About</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">Works</Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/projects">Source</Link>
             </li>
           </ul>
+          <DarkMode/>
         </nav>
       </header>
     </div>
