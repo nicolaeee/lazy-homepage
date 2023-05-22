@@ -1,50 +1,120 @@
 .header {
-    background-color: #ffffff40;;
-    border-radius: 6px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+  background-color: #ffffff40;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 300px;
+  align-items: center;
+}
 
-  }
+.logo a {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
 
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 4em;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+  transform: rotate(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+}
+
+.hamburger:before {
+  top: -8px;
+}
+
+.hamburger:after {
+  top: 8px;
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger:before {
+  top: 0;
+  transform: rotate(0);
+}
+
+.open .hamburger:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 834px) {
   .navbar {
-    display: flex;
-    align-items: center;
-    gap: 300px;
-
+    flex-direction: column;
   }
 
-  .logo a {
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .nav-links {
-    list-style: none;
+    display: none;
+  }
+
+  .open .nav-links {
     display: flex;
-    gap: 4em;
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .nav-links li a {
-    text-decoration: none;
-    color: black;
+  .open .nav-links li {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
   }
 
-  /* Media query for responsive design */
-  @media (max-width: 834px) {
-    .navbar {
-      flex-direction: column;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
     }
-
-    .logo {
-      margin-bottom: 20px;
-    }
-
-    .nav-links {
-      flex-direction: column;
-      gap: 10px;
+    100% {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
+}

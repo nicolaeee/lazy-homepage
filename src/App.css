@@ -10,6 +10,7 @@
 
 body{
   background-color: rgb(240, 231, 219);
+  overflow-x: hidden;
 }
 
 input,

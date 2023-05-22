@@ -9,3 +9,17 @@
   .rotate {
     transform: rotate(360deg);
   }
+
+  .logo__block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 195px;
+  }
+
+  .button__hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
