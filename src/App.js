@@ -5,7 +5,7 @@ function App() {
     <div className="wrapper">
       <Header/>
       <div className="wrapper__content">
-         <h1>Hello</h1>
+         <h1 className='noSelect'>Hello</h1>
       </div>
     </div>
   );

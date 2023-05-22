@@ -13,11 +13,6 @@ code {
     monospace;
 }
 
-/* Disable default tap highlight color */
-/* Disable default tap highlight color */
-* {
-  -webkit-tap-highlight-color: transparent; /* For Safari, iOS, and Android */
-  -moz-tap-highlight-color: transparent; /* For older versions of Firefox */
-  -ms-tap-highlight-color: transparent; /* For Windows Phone */
-  user-select: none; /* Disable text selection */
+html {
+  -webkit-tap-highlight-color: transparent;
 }

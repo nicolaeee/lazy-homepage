@@ -14,7 +14,7 @@ const Logo = () => {
   return (
     <div className={`logo ${isRotated ? 'rotate' : ''}`}>
       <Link to="/" onClick={handleLogoClick}>
-        <img src={logo} alt="Logo" className="logo__image" />
+        <img src={logo} alt="Logo" className="logo__image noSelect" />
       </Link>
     </div>
   );
