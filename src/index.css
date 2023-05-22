@@ -12,7 +12,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-html {
-  -webkit-tap-highlight-color: transparent;
+/* Disable default tap highlight color and remove outline */
+a,
+button,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent; /* For Safari and Chrome */
+  -moz-tap-highlight-color: transparent; /* For older versions of Firefox */
+  -ms-tap-highlight-color: transparent; /* For Internet Explorer */
+  tap-highlight-color: transparent; /* For newer versions of Chrome, Firefox, and other browsers */
+  outline: none;
 }
