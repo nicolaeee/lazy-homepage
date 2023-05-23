@@ -23,3 +23,10 @@
     justify-content: space-between;
     gap: 16px;
 }
+
+.menu__button-swich{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
