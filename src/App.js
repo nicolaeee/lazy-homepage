@@ -6,7 +6,7 @@ function App() {
     <div className="wrapper">
       <Navbar/>
       <div className="wrapper__content">
-         <h1 className='noSelect'>Hello</h1>
+         <h1 className='noSelect'>Hello, I'm an developer based in Romania!</h1>
       </div>
     </div>
   );
