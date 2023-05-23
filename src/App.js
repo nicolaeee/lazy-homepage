@@ -3,6 +3,7 @@ import Navbar from './components/Header/Navbar';
 import { PC } from './components/Pc';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+import { Suspense } from 'react';
 
 
 
@@ -12,10 +13,12 @@ function App() {
       <Navbar/>
       <div className='canvas-container'>
          <Canvas>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
+         <OrbitControls enableZoom={true}/>
+        <ambientLight intensity={0.5}/>
+        <directionalLight position={[-2,5,2]} intensity={1}/>
+        <Suspense fallback={null}>
           <PC/>
-          <OrbitControls/>
+        </Suspense>
       </Canvas>
       </div>
       <div className="wrapper__content">
