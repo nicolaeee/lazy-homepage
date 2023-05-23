@@ -77,7 +77,7 @@
   transform: rotate(90deg);
 }
 
-@media (max-width: 834px) {
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
   }
