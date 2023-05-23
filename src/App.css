@@ -30,3 +30,7 @@ a:focus,a:visited,a:active{
 * {
     -webkit-tap-highlight-color: transparent;
 }
+
+.canvas-container{
+  margin-top: 120px;
+}
