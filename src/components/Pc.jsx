@@ -14,7 +14,7 @@ export function PC(props) {
   const { nodes, materials } = useGLTF('/pc.gltf')
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={4}>
+      <group rotation={[-Math.PI / 2, 0, 0]} scale={3}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <mesh geometry={nodes.Object_4.geometry} material={materials.TextureGrid} position={[0, 0, -0.03]} rotation={[0.09, 0, 0]} />
           <mesh geometry={nodes.Object_6.geometry} material={materials.TextureGrid} position={[0, 0.5, 0.03]} rotation={[0.09, 0, 0]} />

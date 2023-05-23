@@ -18,7 +18,6 @@ function App() {
           <OrbitControls/>
       </Canvas>
       </div>
-
       <div className="wrapper__content">
          <h1 className='noSelect'>Hello, I'm an developer based in Romania!</h1>
       </div>

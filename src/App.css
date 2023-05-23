@@ -32,5 +32,9 @@ a:focus,a:visited,a:active{
 }
 
 .canvas-container{
-  margin-top: 120px;
+  margin-top: 20px;
+}
+
+canvas{
+  height: 500px;
 }
