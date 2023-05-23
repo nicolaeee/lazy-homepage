@@ -16,13 +16,15 @@ const Navbar = () => {
   return (
     <header>
       <Logo />
-      <nav ref={navRef}>
+	  <div className="nav__links">
+		<nav ref={navRef}>
         <Link to="/my-work">Works</Link>
 		<Link to="https://github.com/nicolaeee/lazy-homepage" className="github-link">
         <FaGithub />
-		Source
+		<span className="github__icon">
+			Source
+		</span>
       </Link>
-
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
@@ -33,6 +35,8 @@ const Navbar = () => {
           <FaBars />
         </button>
       </div>
+	  </div>
+
     </header>
   );
 };
