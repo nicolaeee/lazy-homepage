@@ -8,12 +8,13 @@
 header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	height: 80px;
 	padding: 0 2rem;
   border-radius: 5px;
 	background-color: var(--mainColor);
 	color: var(--textColor);
+  gap: 4rem;
 }
 
 nav a {
@@ -45,6 +46,19 @@ nav {
 }
 
 @media only screen and (max-width: 1024px) {
+
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	padding: 0 2rem;
+  border-radius: 5px;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+  gap: 10rem;
+}
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
