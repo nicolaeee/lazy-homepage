@@ -1,9 +1,10 @@
 import './App.css';
-import Header from './components/Header/Header';
+import Navbar from './components/Header/Navbar';
+
 function App() {
   return (
     <div className="wrapper">
-      <Header/>
+      <Navbar/>
       <div className="wrapper__content">
          <h1 className='noSelect'>Hello</h1>
       </div>
