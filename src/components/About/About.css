@@ -101,3 +101,27 @@
     justify-content: space-between;
     flex-direction: column;
   }
+
+  .bio-info {
+    margin-top: 20px;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bio-info p {
+    margin: 10px 0;
+    color: #333;
+
+  }
+
+  .bio-info p span {
+    color: #319795;
+    transition: background-color 0.3s ease;
+  }
+
+  .bio-info p span:hover {
+    background-color: #38B2AC;
+    color: #fff;
+  }
