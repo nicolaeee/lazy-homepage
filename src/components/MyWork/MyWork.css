@@ -1,0 +1,15 @@
+.wrapper__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .block-content {
+    width: calc(50% - 10px); /* Adjust the width as per your design */
+    margin-bottom: 20px; /* Adjust the margin as per your design */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }

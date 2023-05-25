@@ -2,7 +2,9 @@ import React from 'react';
 import './About.css';
 import './AboutMobile.css'
 import PersonalPhoto from '../../assets/img/profile-img.jpg';
+import { Link } from 'react-router-dom';
 import { FaGithub, FaFacebook, FaLinkedin, FaHeart } from 'react-icons/fa';
+import MyWork from '../MyWork/MyWork';
 
 
 const About = () => {
@@ -57,7 +59,7 @@ const About = () => {
             <h2 className='job-header'>
                 I <FaHeart />
             </h2>
-            <button className='button-cv'>My portfolio</button>
+            <Link to="/my-work" className='button-cv'>My portfolio</Link>
             <p>Art, Music, School and commiting to GitHub</p>
             </div>
     </section>
