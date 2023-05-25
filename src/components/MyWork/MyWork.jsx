@@ -1,6 +1,7 @@
 import React from 'react';
 import "./MyWork.css";
 import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import ShelterPhoto from '../../assets/img/shelter.png';
 import PlantsPhoto from '../../assets/img/plants.png';
 import UniversityPort from '../../assets/img/UP.png';
@@ -62,6 +63,7 @@ const MyWork = () => {
                 <FaGithub />
             </a>
           </div>
+          <Link to="/" className='button-cv'>Main Page</Link>
         </div>
       </div>
     </section>
