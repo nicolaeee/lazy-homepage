@@ -20,8 +20,8 @@ const About = () => {
           <img src={PersonalPhoto} alt="profile-img" className='profile__image' />
         </div>
         <div className="personal-info">
-          <h2>Work</h2>
-          <p>Some personal information about me</p>
+          <h2 className='job-header'>Work</h2>
+          <p className='description-profesional'>I am a Computer Science student with a deep passion for coding and software development. As someone who loves to explore the intricacies of programming, I am constantly seeking opportunities to expand my knowledge and skills in this field. Whether it's developing innovative solutions or diving into complex algorithms, I find great joy in the art of crafting software. With a strong dedication to continuous learning and a drive to solve real-world problems through technology, I am excited to contribute to the ever-evolving world of software development."</p>
           <button>Click Me</button>
         </div>
       </div>
