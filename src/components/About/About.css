@@ -79,3 +79,25 @@
 .description-profesional{
     width: 500px;
 }
+
+.button-cv {
+    background-color: #319795;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-cv:hover {
+    background-color: #38B2AC;
+  }
+
+  .personal-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
