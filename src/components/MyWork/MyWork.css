@@ -1,12 +1,12 @@
 .wrapper__blocks {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
 
   .block-content {
-    width: calc(50% - 10px); /* Adjust the width as per your design */
+    /* Adjust the width as per your design */
     margin-bottom: 20px; /* Adjust the margin as per your design */
     display: flex;
     justify-content: space-between;
@@ -15,6 +15,6 @@
   }
 
   .portfolio-image{
-    width: 150px;
+    width: 350px;
     border-radius: 25px;
   }
