@@ -1,31 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 
 export function PC(props) {
   const { nodes, materials } = useGLTF('/pc.gltf');
+  const groupRef = useRef();
 
-  // Traverse through the nodes and set castShadow and receiveShadow on the materials
-  const traverseMaterials = (object) => {
-    if (object.isMesh) {
-      object.castShadow = true;
-      object.receiveShadow = true;
-      if (object.material) {
-        object.material.castShadow = true;
-        object.material.receiveShadow = true;
-      }
-    }
-    if (object.children) {
-      object.children.forEach((child) => traverseMaterials(child));
-    }
-  };
-
-  // Call traverseMaterials on the root object to enable shadows
-  if (nodes && nodes.root) {
-    traverseMaterials(nodes.root);
-  }
+  useFrame(({ clock }) => {
+    const elapsedTime = clock.getElapsedTime();
+    // Update the rotation of the group
+    groupRef.current.rotation.y = elapsedTime;
+  });
 
   return (
-    <group {...props} dispose={null}>
+    <group ref={groupRef} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={1.5}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <mesh geometry={nodes.Object_4.geometry} material={materials.TextureGrid} position={[0, 0, -0.03]} rotation={[0.09, 0, 0]} />
