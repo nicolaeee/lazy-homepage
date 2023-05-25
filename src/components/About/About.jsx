@@ -20,7 +20,7 @@ const About = () => {
           <img src={PersonalPhoto} alt="profile-img" className='profile__image' />
         </div>
         <div className="personal-info">
-          <h2>Personal Info</h2>
+          <h2>Work</h2>
           <p>Some personal information about me</p>
           <button>Click Me</button>
         </div>

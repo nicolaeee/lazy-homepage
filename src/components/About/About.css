@@ -36,7 +36,7 @@
     width: 100px;
     border-radius: 50%;
     border: 29px white;
-    margin-right: 50px;
+
   }
 
   .general-info {
@@ -44,14 +44,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between; /* Center the content horizontally */
-    margin-top: 20px;
+
   }
 
   .general-presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 70px;
+
   }
 
   .name-header {
