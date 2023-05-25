@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import './AboutMobile.css'
 import PersonalPhoto from '../../assets/img/profile-img.jpg';
-import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaFacebook, FaLinkedin, FaHeart } from 'react-icons/fa';
 
 
 const About = () => {
@@ -53,6 +53,12 @@ const About = () => {
                 </a>
             </div>
         </div>
+        <div className="passion-info">
+            <h2 className='job-header'>
+                I <FaHeart />
+            </h2>
+            <p>Art, Music, School and commiting to GitHub</p>
+            </div>
     </section>
   );
 };

@@ -75,7 +75,22 @@
   .job-header{
     text-align: center;
     font-size: 40px;
+    position: relative;
+    display: inline-block;
+    color: black;
   }
+
+
+  .job-header::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+
 .description-profesional{
     width: 500px;
 }
@@ -138,7 +153,12 @@
     background-color: #38B2AC;
     color: #fff;
   }
-
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
 
 .social-link{
@@ -154,3 +174,9 @@ a{
     text-decoration: none;
     color: #319795;
   }
+.passion-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
