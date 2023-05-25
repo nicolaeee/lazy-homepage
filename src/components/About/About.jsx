@@ -3,7 +3,9 @@ import './About.css'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div className="wrapper__content">
+    <h1 className='noSelect'>Hello, I'm a developer based in Romania!</h1>
+  </div>
   )
 }
 

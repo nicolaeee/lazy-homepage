@@ -1,18 +1,14 @@
 import './App.css';
 import Navbar from './components/Header/Navbar';
 import CanvasComponent from './components/CanvasComponent';
-
+import About from './components/About/About';
 
 function App() {
   return (
     <div className="wrapper">
-      <div className="navbar-wrapper">
         <Navbar />
-      </div>
         <CanvasComponent />
-      <div className="wrapper__content">
-        <h1 className='noSelect'>Hello, I'm a developer based in Romania!</h1>
-      </div>
+        <About/>
     </div>
   );
 }
