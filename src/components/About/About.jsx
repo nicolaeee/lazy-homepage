@@ -57,6 +57,7 @@ const About = () => {
             <h2 className='job-header'>
                 I <FaHeart />
             </h2>
+            <button className='button-cv'>My portfolio</button>
             <p>Art, Music, School and commiting to GitHub</p>
             </div>
     </section>
