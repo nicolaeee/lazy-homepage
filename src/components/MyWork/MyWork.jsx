@@ -1,6 +1,10 @@
 import React from 'react'
 import "./MyWork.css"
 import { FaGithub } from 'react-icons/fa'
+import ShelterPhoto from '../../assets/img/shelter.png'
+import PlantsPhoto from '../../assets/img/plants.png'
+import UniversityPort from '../../assets/img/UP.png'
+import CsAciee from '../../assets/img/cs-aciee.png'
 
 const MyWork = () => {
   return (
@@ -10,8 +14,8 @@ const MyWork = () => {
     <div className="wrapper__blocks">
       <div className="block-content">
         <a href="work1-link">
-          <img src="image1.jpg" alt="Work 1" />
-          <p>Work 1 Description</p>
+          <img src={ShelterPhoto} alt="Shelter" className='portfolio-image'/>
+          <p>Shelter - A house for all pets </p>
           <p>
             Work 1 Details
             <FaGithub />
@@ -20,7 +24,7 @@ const MyWork = () => {
       </div>
       <div className="block-content">
         <a href="work2-link">
-          <img src="image2.jpg" alt="Work 2" />
+        <img src={UniversityPort} alt="University" className='portfolio-image'/>
           <p>Work 2 Description</p>
           <p>
             Work 2 Details
@@ -30,7 +34,7 @@ const MyWork = () => {
       </div>
       <div className="block-content">
         <a href="work3-link">
-          <img src="image3.jpg" alt="Work 3" />
+        <img src={CsAciee} alt="Cs-Aciee" className='portfolio-image'/>
           <p>Work 3 Description</p>
           <p>
             Work 3 Details
@@ -40,7 +44,7 @@ const MyWork = () => {
       </div>
       <div className="block-content">
         <a href="work4-link">
-          <img src="image4.jpg" alt="Work 4" />
+        <img src={PlantsPhoto} alt="Plants" className='portfolio-image'/>
           <p>Work 4 Description</p>
           <p>
             Work 4 Details

@@ -3,7 +3,7 @@ import './About.css';
 import './AboutMobile.css'
 import PersonalPhoto from '../../assets/img/profile-img.jpg';
 import { Link } from 'react-router-dom';
-import { FaGithub, FaFacebook, FaLinkedin, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaFacebook, FaLinkedin, FaHeart, FaCodewars } from 'react-icons/fa';
 import MyWork from '../MyWork/MyWork';
 
 
@@ -53,6 +53,8 @@ const About = () => {
                 <FaLinkedin />
                 My Linkedin
                 </a>
+
+
             </div>
         </div>
         <div className="passion-info">
