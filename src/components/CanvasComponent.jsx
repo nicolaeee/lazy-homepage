@@ -8,7 +8,8 @@ import { Suspense } from 'react';
 
 function CanvasComponent() {
   return (
-    <Canvas>
+    <div className="canvas-wrapper">
+       <Canvas>
       <OrbitControls enableZoom={true} />
       <ambientLight intensity={0.5} />
       <directionalLight position={[-2, 5, 2]} intensity={1} />
@@ -16,6 +17,7 @@ function CanvasComponent() {
         <PC />
       </Suspense>
     </Canvas>
+    </div>
   );
 }
 

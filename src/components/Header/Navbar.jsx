@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import "./Header.css";
 import DarkMode from "../DarkMode/DarkMode";
 import Logo from "../Logo/Logo";
+import MyWork from "../MyWork/MyWork";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -15,7 +16,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <Logo />
+      <Link to="/">  <Logo /></Link>
 	  <div className="nav__links">
 		<nav ref={navRef}>
         <Link to="/my-work">Works</Link>
