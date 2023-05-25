@@ -12,10 +12,24 @@
     justify-content: center;
   }
 
+
   .present__text {
     margin: 0;
     text-align: center;
+    overflow: hidden; /* Ensure text doesn't overflow outside the container */
+    white-space: nowrap; /* Prevent line breaks */
+    animation: typewriter 7s steps(40) 1s infinite;
   }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
 
 
   .profile__image {

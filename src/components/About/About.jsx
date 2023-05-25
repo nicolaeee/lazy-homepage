@@ -1,12 +1,13 @@
 import React from 'react';
 import './About.css';
+import './AboutMobile.css'
 import PersonalPhoto from '../../assets/img/profile-img.jpg';
 
 const About = () => {
   return (
     <section className='aboutpage'>
       <div className="wrapper__content">
-            <div className='present__header'>
+      <div className='present__header'>
                 <h1 className='present__text'>
                     Hello, I'm a developer based in Romania!
                 </h1>
