@@ -8,11 +8,44 @@
   .block-content {
     /* Adjust the width as per your design */
     margin-bottom: 20px; /* Adjust the margin as per your design */
+    width: 350px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
   }
+
+  .block-content:hover {
+    transform: translateY(-5px);
+  }
+
+  .block-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .block-content p {
+    margin: 10px 0;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .block-content a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .block-content a:hover {
+    color: #333;
+  }
+
 
   .portfolio-image{
     width: 350px;
