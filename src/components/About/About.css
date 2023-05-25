@@ -141,4 +141,16 @@
 
 
 
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
 
+a{
+    list-style: none;
+    text-decoration: none;
+    color: #319795;
+  }

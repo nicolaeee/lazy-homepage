@@ -2,6 +2,8 @@ import React from 'react';
 import './About.css';
 import './AboutMobile.css'
 import PersonalPhoto from '../../assets/img/profile-img.jpg';
+import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa';
+
 
 const About = () => {
   return (
@@ -32,6 +34,23 @@ const About = () => {
             <p><span className="year-span">2019</span> Start high school at 16 years old</p>
             <p><span className="year-span">2022</span> Accepted at the University Dunarea de Jos as a Computer Science student</p>
             <p><span className="year-span">2022 to forever</span> Fall in love not only with a girl but also with software development</p>
+            </div>
+        </div>
+        <div className="contact-info">
+        <h2 className="job-header">On the web</h2>
+            <div className="social-link">
+                <a href="https://github.com/nicolaeee">
+                <FaGithub />
+                @nicolaeee
+                </a>
+                <a href="https://www.facebook.com/nicu.gorobet">
+                <FaFacebook />
+                My Facebook
+                </a>
+                <a href="https://www.linkedin.com/in/nicolae-gorobe%C8%9B-b50858252/">
+                <FaLinkedin />
+                My Linkedin
+                </a>
             </div>
         </div>
     </section>
