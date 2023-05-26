@@ -2,4 +2,4 @@
 Website based on React and my main portofolio for the front-end development 
 
 #Development link:
-https://lazy-homepage.vercel.app/
+https://personal-portfolio-six-tan.vercel.app/
