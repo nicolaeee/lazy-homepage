@@ -57,6 +57,9 @@ const About = () => {
                 <FaLinkedin />
                 My Linkedin
                 </a>
+                <a href="https://www.codewars.com/users/rsschool_4a3af80f6a55ef96">
+                  Codewars
+                </a>
 
 
             </div>
