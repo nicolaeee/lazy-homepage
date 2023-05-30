@@ -5,7 +5,7 @@ import PersonalPhoto from '../../assets/img/profile-img.jpg';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaFacebook, FaLinkedin, FaHeart, FaCodewars } from 'react-icons/fa';
 import MyWork from '../MyWork/MyWork';
-import MyCV from '../../assets/CV-MD-GOROBET-NICOLAE-JUNIOR-FRONT-END-DEV.pdf';
+import MyCV from '../../assets/CV-MD.pdf';
 
 const About = () => {
   const handleCVClick = () => {
