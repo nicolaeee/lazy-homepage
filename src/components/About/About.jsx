@@ -17,7 +17,7 @@ const About = () => {
       <div className="wrapper__content">
         <div className='present__header'>
           <h1 className='present__text'>
-            Hello, I'm a developer based in Romania!
+            Hello, I'm a junior developer based in Romania and Moldova!
           </h1>
         </div>
         <div className="general-info">
@@ -36,9 +36,9 @@ const About = () => {
       <div className="bio-info">
             <h2 className="job-header">Bio</h2>
             <div className="life-path">
-            <p><span className="year-span">2003</span> Born in Brasov Romania</p>
+            <p><span className="year-span">2003</span> Born in Brasov Romania, moved to Moldova</p>
             <p><span className="year-span">2019</span> Start high school at 16 years old</p>
-            <p><span className="year-span">2022</span> Accepted at the University Dunarea de Jos as a Computer Science student</p>
+            <p><span className="year-span">2022</span> Accepted at the University Dunarea de Jos as a Computer Science student being from Moldova</p>
             <p><span className="year-span">2022 to forever</span> Fall in love not only with a girl but also with software development</p>
             </div>
         </div>
