@@ -11,9 +11,14 @@
     .contact-form input,
     .contact-form textarea {
       font-size: 0.85rem;
+      width: 100%; /* Ensure inputs take the full width of the container */
+      max-width: 100%; /* Prevent inputs from exceeding container width */
+      box-sizing: border-box; /* Include padding and border in width */
     }
 
     .contact-form .submit-button {
       font-size: 0.9rem;
+      width: 100%; /* Ensure button matches container width */
+      max-width: 100%; /* Prevent button from exceeding container width */
     }
   }
