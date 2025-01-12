@@ -10,6 +10,7 @@
 4 - npm i
 ---
 5 - npm start
+---
 
 ## Development link:
 https://personal-portfolio-six-tan.vercel.app/
