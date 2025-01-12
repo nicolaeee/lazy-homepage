@@ -40,27 +40,17 @@ const Form = () => {
       </div>
 
       <div className="field">
-        <label htmlFor="to_name">Recipient's Name</label>
-        <input type="text" name="to_name" id="to_name" required />
-      </div>
-
-      <div className="field">
         <label htmlFor="email">Your Email</label>
         <input type="email" name="email" id="email" required />
       </div>
 
       <div className="field">
-        <label htmlFor="company">Company</label>
+        <label htmlFor="company">Company name</label>
         <input type="text" name="company" id="company" />
       </div>
 
       <div className="field">
-        <label htmlFor="reply_to">Reply To</label>
-        <input type="text" name="reply_to" id="reply_to" required />
-      </div>
-
-      <div className="field">
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message">Leave a message</label>
         <textarea name="message" id="message" required></textarea>
       </div>
 
