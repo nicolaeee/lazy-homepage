@@ -11,8 +11,8 @@ const Form = () => {
 
     emailjs
       .sendForm(
-        'your_service_id', // Replace with your EmailJS service ID
-        'your_template_id', // Replace with your EmailJS template ID
+        'default_service', // Replace with your EmailJS service ID
+        'template_rzuzb2n', // Replace with your EmailJS template ID
         formRef.current,
         'OQ4_YOZOMkDkKCz2_' // Replace with your EmailJS public key
       )

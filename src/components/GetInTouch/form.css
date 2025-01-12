@@ -36,7 +36,7 @@
   .contact-form .submit-button {
     width: 100%;
     padding: 0.8rem;
-    background-color: #007bff;
+    background-color: #38B2AC;
     color: white;
     border: none;
     border-radius: 5px;
@@ -46,5 +46,5 @@
   }
 
   .contact-form .submit-button:hover {
-    background-color: #0056b3;
+    background-color: #68f4ed;
   }
