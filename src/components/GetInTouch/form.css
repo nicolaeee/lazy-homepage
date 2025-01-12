@@ -57,3 +57,13 @@
   .submit-button:hover {
     background-color: #0056b3;
   }
+
+  .form-status {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: green;
+  }
+
+  .form-status.error {
+    color: red;
+  }
