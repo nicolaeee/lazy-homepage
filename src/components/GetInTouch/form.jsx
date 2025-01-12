@@ -1,11 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './form.css';
 import './formMobile.css';
 
 const Form = () => {
   const formRef = useRef();
-  const [status, setStatus] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,16 +14,16 @@ const Form = () => {
         'your_service_id', // Replace with your EmailJS service ID
         'your_template_id', // Replace with your EmailJS template ID
         formRef.current,
-        'your_user_id' // Replace with your EmailJS public key
+        'OQ4_YOZOMkDkKCz2_' // Replace with your EmailJS public key
       )
       .then(
         (result) => {
-          setStatus('Message sent successfully!');
-          console.log(result.text);
+          alert('Message sent successfully!');
+          console.log('EmailJS result:', result.text);
         },
         (error) => {
-          setStatus('Failed to send the message.');
-          console.error(error.text);
+          alert('Failed to send the message. Please try again later.');
+          console.error('EmailJS error:', error.text);
         }
       );
 
@@ -34,42 +33,38 @@ const Form = () => {
   return (
     <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
       <h2 className="form-header">Get in Touch</h2>
-      <label htmlFor="from_name">Your Name</label>
-      <input
-        type="text"
-        id="from_name"
-        name="from_name"
-        placeholder="Enter your name"
-        required
-      />
 
-      <label htmlFor="company">Company Name</label>
-      <input
-        type="text"
-        id="company"
-        name="company"
-        placeholder="Enter your company name"
-      />
+      <div className="field">
+        <label htmlFor="from_name">Your Name</label>
+        <input type="text" name="from_name" id="from_name" required />
+      </div>
 
-      <label htmlFor="email">E-mail</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Enter your email"
-        required
-      />
+      <div className="field">
+        <label htmlFor="to_name">Recipient's Name</label>
+        <input type="text" name="to_name" id="to_name" required />
+      </div>
 
-      <label htmlFor="message">Custom Message</label>
-      <textarea
-        id="message"
-        name="message"
-        placeholder="Write your message"
-        required
-      ></textarea>
+      <div className="field">
+        <label htmlFor="email">Your Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
 
-      <button type="submit" className="submit-button">Submit</button>
-      {status && <p className="form-status">{status}</p>}
+      <div className="field">
+        <label htmlFor="company">Company</label>
+        <input type="text" name="company" id="company" />
+      </div>
+
+      <div className="field">
+        <label htmlFor="reply_to">Reply To</label>
+        <input type="text" name="reply_to" id="reply_to" required />
+      </div>
+
+      <div className="field">
+        <label htmlFor="message">Message</label>
+        <textarea name="message" id="message" required></textarea>
+      </div>
+
+      <button type="submit" className="submit-button">Send Email</button>
     </form>
   );
 };
