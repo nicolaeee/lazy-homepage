@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import './AboutMobile.css';
+import Form from '../GetInTouch/form';
 import PersonalPhoto from '../../assets/img/profile-img.jpg';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaFacebook, FaLinkedin, FaHeart, FaCodewars } from 'react-icons/fa';
@@ -71,6 +72,9 @@ const About = () => {
             <Link to="/my-work" className='button-cv'>My portfolio</Link>
             <p>Art, Music, School and commiting to GitHub</p>
             </div>
+            <div className="get-in-touch">
+        <Form />
+      </div>
     </section>
   );
 };
